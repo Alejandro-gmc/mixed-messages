@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    
+    <!--This header, have to ask about it. I think these links exceed the scope of this practice. It may be deleted... -->
+
     <header>
         <nav id="header__nav">
             <div id="header__logo">
@@ -44,86 +47,91 @@
             <p class="header__meta">Moon in Leo - Sun in Sagittarius</p>
         </div>
     </header>
+
+
     <main>
+
+        <!-- BUTTONS -->
+
         <section id="zodiac" class="zodiac__grid">
-            <button type="button" id="aries-btn" class="zodiac__button">
+            <button type="button" id="aries-btn" class="zodiac__button" onclick="showSign('aries')">
                 <div class="zodiac__card">
                     <p class="zodiac__date-range">Mar 21 - Apr 19</p>
                     <div class="zodiac__icon"><i class="fa-solid fa-aries"></i></div>
                     <p class="zodiac__name">Aries</p>
                 </div>
             </button>
-            <button type="button" id="taurus-btn" class="zodiac__button">
+            <button type="button" id="taurus-btn" class="zodiac__button" onclick="showSign('taurus')">
                 <div class="zodiac__card">
                     <p class="zodiac__date-range">Apr 20 - May 20</p>
                     <div class="zodiac__icon"><i class="fa-solid fa-taurus"></i></div>
                     <p class="zodiac__name">Taurus</p>
                 </div>
             </button>
-            <button type="button" id="gemini-btn" class="zodiac__button">
+            <button type="button" id="gemini-btn" class="zodiac__button" onclick="showSign('gemini')">
                 <div class="zodiac__card">
                     <p class="zodiac__date-range">May 21 - Jun 20</p>
                     <div class="zodiac__icon"><i class="fa-solid fa-gemini"></i></div>
                     <p class="zodiac__name">Gemini</p>
                 </div>
             </button>
-            <button type="button" id="cancer-btn" class="zodiac__button">
+            <button type="button" id="cancer-btn" class="zodiac__button" onclick="showSign('cancer')">
                 <div class="zodiac__card">
                     <p class="zodiac__date-range">Jun 21 - Jul 22</p>
                     <div class="zodiac__icon"><i class="fa-solid fa-cancer"></i></div>
                     <p class="zodiac__name">Cancer</p>
                 </div>
             </button>
-            <button type="button" id="leo-btn" class="zodiac__button">
+            <button type="button" id="leo-btn" class="zodiac__button" onclick="showSign('leo')">
                 <div class="zodiac__card">
                     <p class="zodiac__date-range">Jul 23 - Aug 22</p>
                     <div class="zodiac__icon"><i class="fa-solid fa-leo"></i></div>
                     <p class="zodiac__name">Leo</p>
                 </div>
             </button>
-            <button type="button" id="virgo-btn" class="zodiac__button">
+            <button type="button" id="virgo-btn" class="zodiac__button" onclick="showSign('virgo')">
                 <div class="zodiac__card">
                     <p class="zodiac__date-range">Aug 23 - Sep 22</p>
                     <div class="zodiac__icon"><i class="fa-solid fa-virgo"></i></div>
                     <p class="zodiac__name">Virgo</p>
                 </div>
             </button>
-            <button type="button" id="libra-btn" class="zodiac__button">
+            <button type="button" id="libra-btn" class="zodiac__button" onclick="showSign('libra')">
                 <div class="zodiac__card">
                     <p class="zodiac__date-range">Sep 23 - Oct 22</p>
                     <div class="zodiac__icon"><i class="fa-solid fa-libra"></i></div>
                     <p class="zodiac__name">Libra</p>
                 </div>
             </button>
-            <button type="button" id="scorpio-btn" class="zodiac__button">
+            <button type="button" id="scorpio-btn" class="zodiac__button" onclick="showSign('scorpio')">
                 <div class="zodiac__card">
                     <p class="zodiac__date-range">Oct 23 - Nov 21</p>
                     <div class="zodiac__icon"><i class="fa-solid fa-scorpio"></i></div>
                     <p class="zodiac__name">Scorpio</p>
                 </div>
             </button>
-            <button type="button" id="sagittarius-btn" class="zodiac__button">
+            <button type="button" id="sagittarius-btn" class="zodiac__button" onclick="showSign('sagittarius')">
                 <div class="zodiac__card">
                     <p class="zodiac__date-range">Nov 22 - Dec 21</p>
                     <div class="zodiac__icon"><i class="fa-solid fa-sagittarius"></i></div>
                     <p class="zodiac__name">Sagittarius</p>
                 </div>
             </button>
-            <button type="button" id="capricorn-btn" class="zodiac__button">
+            <button type="button" id="capricorn-btn" class="zodiac__button" onclick="showSign('capricorn')">
                 <div class="zodiac__card">
                     <p class="zodiac__date-range">Dec 22 - Jan 19</p>
                     <div class="zodiac__icon"><i class="fa-solid fa-capricorn"></i></div>
                     <p class="zodiac__name">Capricorn</p>
                 </div>
             </button>
-            <button type="button" id="aquarius-btn" class="zodiac__button">
+            <button type="button" id="aquarius-btn" class="zodiac__button" onclick="showSign('aquarius')">
                 <div class="zodiac__card">
                     <p class="zodiac__date-range">Jan 20 - Feb 18</p>
                     <div class="zodiac__icon"><i class="fa-solid fa-aquarius"></i></div>
                     <p class="zodiac__name">Aquarius</p>
                 </div>
             </button>
-            <button type="button" id="pisces-btn" class="zodiac__button">
+            <button type="button" id="pisces-btn" class="zodiac__button" onclick="showSign('pisces')">
                 <div class="zodiac__card">
                     <p class="zodiac__date-range">Feb 19 - Mar 20</p>
                     <div class="zodiac__icon"><i class="fa-solid fa-pisces"></i></div>
@@ -131,71 +139,69 @@
                 </div>
             </button>
         </section>
+
+
         <section id="reading">
+            
+            <!-- CARDS (for each sign) -->
+            
             <div class="reading__card">
                 <div class="reading__content">
                     <div class="reading__main">
-                        <h2 class="reading__title">Leo</h2>
-                        <p class="reading__subtitle">The majestic Lion</p>
-                        <p class="reading__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-                            dolores in iusto accusantium reiciendis rem, nam minus ratione voluptatem, quo, molestiae
-                            possimus. In atque facere quia unde, odio cum nam?</p>
+                        <h2 class="reading__title" id="sign-name"></h2>
+                        <p class="reading__subtitle" id="sign-description"></p>
+                        <p class="reading__subtitle" id="sign-type"></p>
+                        <p class="reading__text" id="sign-chart"></p>
                     </div>
                     <div class="reading__lucky">
                         <div>
-                            <p class="reading__lucky-title">Lucky Color</p>
-                            <p class="reading__lucky-color">Amber Glow</p>
+                            <p class="reading__lucky-title">Lucky Color/s</p>
+                            <p class="reading__lucky-color" id="lucky-colors"></p>
                         </div>
                         <div>
-                            <p class="reading__lucky-title">Lucky Number</p>
-                            <p class="reading__lucky-number">08</p>
+                            <p class="reading__lucky-title">Lucky Numbers</p>
+                            <p class="reading__lucky-number" id="lucky-numbers"></p>
                         </div>
                     </div>
                 </div>
+
+                <!-- RANDOM SENTENCES -->
+
                 <div class="reading__section">
                     <div class="reading__section-card">
                         <div class="reading__section-header">
                             <span class="reading__section-icon"><i class="fa-solid fa-heart"></i></span>
                             <h2 class="reading__section-title">Love</h2>
                         </div>
-                        <p id="love-text" class="reading__section-text">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Mollitia maxime, animi debitis earum, impedit natus inventore quod non
-                            sint dolore quisquam molestiae velit, consectetur est totam voluptate rem labore assumenda?
-                        </p>
+                        <p id="love-text" class="reading__section-text"></p>
                     </div>
                     <div class="reading__section-card">
                         <div class="reading__section-header">
                             <span class="reading__section-icon"><i class="fa-solid fa-briefcase"></i></span>
                             <h2 class="reading__section-title">Work</h2>
                         </div>
-                        <p id="work-text" class="reading__section-text">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Mollitia maxime, animi debitis earum, impedit natus inventore quod non
-                            sint dolore quisquam molestiae velit, consectetur est totam voluptate rem labore assumenda?
-                        </p>
+                        <p id="work-text" class="reading__section-text"></p>
                     </div>
                     <div class="reading__section-card">
                         <div class="reading__section-header">
                             <span class="reading__section-icon"><i class="fa-solid fa-sack-dollar"></i></span>
                             <h2 class="reading__section-title">Money</h2>
                         </div>
-                        <p id="money-text" class="reading__section-text">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Mollitia maxime, animi debitis earum, impedit natus inventore quod non
-                            sint dolore quisquam molestiae velit, consectetur est totam voluptate rem labore assumenda?
-                        </p>
+                        <p id="money-text" class="reading__section-text"></p>
                     </div>
                     <div class="reading__section-card">
                         <div class="reading__section-header">
                             <span class="reading__section-icon"><i class="fa-solid fa-stethoscope"></i></span>
                             <h2 class="reading__section-title">Health</h2>
                         </div>
-                        <p id="health-text" class="reading__section-text">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Mollitia maxime, animi debitis earum, impedit natus inventore quod non
-                            sint dolore quisquam molestiae velit, consectetur est totam voluptate rem labore assumenda?
-                        </p>
+                        <p id="health-text" class="reading__section-text"></p>
                     </div>
                 </div>
             </div>
         </section>
+        
+        <!--This footer, have to ask about it. I think these links exceed the scope of this practice. It may be deleted. -->
+        
         <footer>
             <ul class="footer__menu">
                 <li class="footer__menu-item">
@@ -211,8 +217,18 @@
                 </li>
             </ul>
             <p class="footer__copyright">&copy; The Celestial Archivist. All Rights Reserved.</p>
+            
+            <!-- I added this paracraph to the footer: -->
+            
+            <p>These celestial insights are offered for entertainment and inspiration only. The messages are randomly generated and not based on actual astrological analysis.<br>
+                Readings may vary each time you refresh the page.</p>
         </footer>
+    
     </main>
+
+<script src="./script.js"></script>
+
+
 </body>
 
 </html>
