@@ -227,25 +227,26 @@ function showSign(sign) {
     data.numbers.join(", ");
 
   // LUCKY COLORS GENERATOR
-
   const container = document.getElementById("lucky-colors");
   container.innerHTML = "";
 
   data.colors.forEach(color => {
+    const item = document.createElement("span");
+    item.className = "reading__lucky-color-item";
 
     // Text label
-    const text = document.createTextNode(color + " ");
+    const label = document.createElement("span");
+    label.className = "reading__lucky-color-label";
+    label.innerText = color;
 
     // Colored square
     const square = document.createElement("span");
-    square.style.display = "inline-block";
-    square.style.width = "15px";
-    square.style.height = "15px";
+    square.className = "reading__lucky-color-swatch";
     square.style.backgroundColor = color;
-    square.style.marginRight = "8px";
 
-    container.appendChild(text);
-    container.appendChild(square);
+    item.appendChild(label);
+    item.appendChild(square);
+    container.appendChild(item);
   });
 
   // =========================
