@@ -14,4 +14,3 @@ DESCRIPTION OF THE PROJECT: Randomly generated message composed by 3 or more ran
 
 INSTRUCTIONS:
 
-CHALLENGES:
