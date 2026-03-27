@@ -183,6 +183,7 @@ function getRandomUniqueIndices(length) {
 }
 
 const signNames = Object.keys(signs);
+// Pre-generate one unique message per sign in each category for this page load.
 const healthIndices = getRandomUniqueIndices(health.length);
 const loveIndices = getRandomUniqueIndices(love.length);
 const workIndices = getRandomUniqueIndices(work.length);
@@ -204,6 +205,7 @@ function renderLuckyColors(colors) {
   const container = document.getElementById("lucky-colors");
   container.innerHTML = "";
 
+  // Rebuild the lucky colors area each time a different sign is selected.
   colors.forEach(color => {
     const item = document.createElement("span");
     item.className = "reading__lucky-color-item";
@@ -260,6 +262,7 @@ function showSign(sign) {
 
 const zodiacButtons = document.querySelectorAll(".zodiac__button");
 
+// Each button id matches a sign key, so we can pass it straight into showSign().
 zodiacButtons.forEach(button => {
   button.addEventListener("click", () => {
     showSign(button.id);
