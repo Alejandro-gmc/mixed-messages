@@ -228,11 +228,8 @@ function showSign(sign) {
   const { name, description, type, chart, numbers, colors } = signs[sign];
   const { love, work, money, health } = generated[sign];
 
-  // Ensure the reading section is visible once a sign is selected
-  const readingSection = document.getElementById("reading");
-  if (readingSection) {
-    readingSection.style.display = "block";
-  }
+  // Reveal the reading section after a sign is selected
+  document.getElementById("reading").hidden = false;
 
   // =========================
   // UPDATE CARD CONTENT

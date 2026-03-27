@@ -157,7 +157,6 @@ header {
 
 #reading {
   margin-top: 1.75rem;
-  display: none; /* hidden until a sign is selected */
 }
 
 .reading__card {
