@@ -359,6 +359,12 @@ function showSign(sign) {
   const data = signs[sign];
   const sentences = generated[sign];
 
+  // Ensure the reading section is visible once a sign is selected
+  const readingSection = document.getElementById("reading");
+  if (readingSection) {
+    readingSection.style.display = "block";
+  }
+
   // =========================
   // UPDATE CARD CONTENT
   // =========================
@@ -405,4 +411,3 @@ function showSign(sign) {
   document.getElementById("money-text").innerText = sentences.money;
   document.getElementById("health-text").innerText = sentences.health;
 };
-
