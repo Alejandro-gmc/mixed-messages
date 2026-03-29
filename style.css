@@ -157,7 +157,6 @@ header {
 
 #reading {
   margin-top: 1.75rem;
-  display: none; /* hidden until a sign is selected */
 }
 
 .reading__card {
@@ -217,6 +216,22 @@ header {
 .reading__lucky-number {
   font-size: 0.9rem;
   color: #e5e7eb;
+}
+
+.reading__lucky-color-item {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.75rem;
+}
+
+.reading__lucky-color-label {
+  margin-right: 0.35rem;
+}
+
+.reading__lucky-color-swatch {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
 }
 
 .reading__section {
