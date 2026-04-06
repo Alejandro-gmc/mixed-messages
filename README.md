@@ -1,12 +1,13 @@
 # Celestial Editorial
 
+[![Demo Screenshot](Demo%20image.jpg)](https://alejandro-gmc.github.io/mixed-messages/)
 
 Celestial Editorial is a horoscope-style web app where users can select a zodiac sign and view a generated reading in the browser.
 
 The project was inspired by the Codecademy Full-Stack Engineer `Mixed Messages` exercise and expanded into a browser-based version using HTML, CSS, and JavaScript.
 It was developed as a collaborative practice project focused on working with Git, GitHub, shared code, and team-based development.
 
-[Demo](https://fatimaov.github.io/mixed-messages/)
+[Demo](https://alejandro-gmc.github.io/mixed-messages/)
 
 ## Features
 

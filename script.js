@@ -266,5 +266,7 @@ const zodiacButtons = document.querySelectorAll(".zodiac__button");
 zodiacButtons.forEach(button => {
   button.addEventListener("click", () => {
     showSign(button.id);
+    // Scroll to the readings section smoothly when the zodiacButtons are clicked.
+    document.getElementById("reading").scrollIntoView({ behavior: 'smooth' });
   });
 });
